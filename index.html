@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Lyon Tech</title>
@@ -14,19 +16,26 @@
     <header class="header">
         <div class="container d-flex content_header">
             <div class="logo_header">
-                <a href="">
+                <a href="" class="only-desktop">
                     <img src="assets/img/logo.png" alt="">
                 </a>
+                <div class="only-mobile">
+                    <img src="assets/img/logo.png" alt="" id="open_menu_mobile">
+                </div>
             </div>
 
             <div class="right_header d-flex">
+                <div class="only-mobile header_mobile_menu">
+                    <img src="assets/img/logo.png" alt="" id="close_menu_mobile">
+                </div>
                 <nav class="menu">
                     <ul>
-                        <li><a href="">funcionalidades</a></li>
-                        <li><a href="">Para quem é</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Clientes</a></li>
-                        <li><a href="">Blog</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#features">Funcionalidades</a></li>
+                        <li><a href="#who">Para quem é</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#customers">Clientes</a></li>
+                        <li><a href="#blog">Blog</a></li>
                     </ul>
                 </nav>
     
@@ -76,7 +85,7 @@
             </div>
         </section>
 
-        <section class="sec-default sec-features">
+        <section class="sec-default sec-features" id="features">
             <div class="container d-flex">
                 <header class="header-default">
                     <h2 class="title-default">Funcionalidades</h2>
@@ -84,39 +93,63 @@
                 </header>
 
                 <section class="d-flex list_cards">
-                    <article class="card_features">
+                    <article class="card_features" data-description="Tenha todos os indicadores de vendas do seu negócio centralizados, organizados e automatizados! Informações em tempo real de toda a produtividade, produção, ranking, ticket médio, desempenho individual, metas, análises e outros indicadores com toda a segurança na nuvem que a Lyon disponibiliza para a sua empresa.">
                         <img src="assets/img/gestao-de-vendas 1.png" alt="">
                         <p>Gestão de Vendas</p>
 
-                        <button class="btn-blue">Saiba Mais</i></button>
+                        <button class="btn-blue btn_open_feat">Saiba Mais</i></button>
                     </article>
 
-                    <article class="card_features">
+                    <article class="card_features" data-description="Tem dificuldade de fazer a gestão e o controle das comissão por estar envolvido em várias regras específicas e uma quantidade considerável? Tenha todo esse controle de maneira automatizada com todos os cálculos prontos e de fácil acesso. Sem dor de cabeça e sem estresse, pronto para ser consultado.">
                         <img src="assets/img/controle-de-comissões 1.png" alt="">
                         <p>Controle de Comissões</p>
 
-                        <button class="btn-blue">Saiba Mais</i></button>
+                        <button class="btn-blue btn_open_feat">Saiba Mais</i></button>
                     </article>
 
-                    <article class="card_features">
+                    <article class="card_features" data-description="Pensa em potencializar o seu negócio com estratégias baseado em análise de dados utilizando indicadores e métricas personalizadas? Tenha facilmente a transformação dos dados em informação que o seu negócio gera para tomada de decisão. Tomada de decisão baseada em dados é a melhor forma de potencializar a estratégia do seu negócio, alavancando o seu resultado.">
                         <img src="assets/img/analise-de-indicares 1.png" alt="">
                         <p>Análise de Indicadores</p>
 
-                        <button class="btn-blue">Saiba Mais</i></button>
+                        <button class="btn-blue btn_open_feat">Saiba Mais</i></button>
                     </article>
 
-                    <article class="card_features">
+                    <article class="card_features" data-description="Tem várias lojas, várias empresas, ou empreendimentos diversos e gostaria de ver toda a operação em uma única visão ? De fácil acesso, centralizado e automatizado? Tenha a plataforma de dados centralizado com os todos as visões desejadas automatizadas, tudo personalizado de acordo com sua necessidade">
                         <img src="assets/img/plataforma-de-dados 1.png" alt="">
                         <p>Plataforma de Dados Centralizados</p>
 
-                        <button class="btn-blue">Saiba Mais</i></button>
+                        <button class="btn-blue btn_open_feat">Saiba Mais</i></button>
                     </article>
                 </section>
             </div>
             <img class="float_feat" src="assets/img/tech-icon2.png" alt="">
+
+            <div class="modal_thumb">
+                <img class="img_modal_set" src="assets/img/analise-de-indicares 1.png" alt="">
+            </div>
+
+            <div class="modal_feat">
+                <div class="content_modal_feat">
+                    <header class="header-default">
+                        <h2 class="title_modal_set">Gestão de Vendas</h2>
+                        <img class="icon-title-modal" src="assets/img/titulo-icon-white.png" alt="">
+
+                        <div class="close_modal_feat">
+                            <img src="assets/img/close.png" alt="">
+                        </div>
+                    </header>
+
+                    <p class="description_modal_set">Tenha todos os indicadores de vendas do seu negócio centralizados, organizados e automatizados! Informações em tempo real de toda a produtividade, produção, ranking, ticket médio, desempenho individual, metas, análises e outros indicadores com toda a segurança na nuvem que a Lyon disponibiliza para a sua empresa.</p>
+
+                    <div class="bottom_feat">
+                        <a href="" class="btn-blue">Falar com um especialista</a>
+                        <button class="btn-blue btn-dark" id="close-two-modal">fechar</button>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="sec-default sec_who">
+        <section class="sec-default sec_who" id="who">
             <div class="container d-flex">
                 <header class="header-default">
                     <h2 class="title-default color-white">Ideal para <strong>quem</strong></h2>
@@ -147,7 +180,8 @@
         <section class="sec-default sec_cta">
             <div class="container d-flex">
                 <div class="f-50">
-                    <img src="assets/img/phone.png" alt="">
+                    <img class="only-desktop" src="assets/img/phone.png" alt="">
+                    <img class="only-mobile" src="assets/img/phone-mobile.png" alt="">
                 </div>
                 <div class="f-50 right_cta">
                     <h2>Precisando otimizar a tomada de decisão da sua equipe?</h2>
@@ -156,7 +190,7 @@
             </div>
         </section>
 
-        <section class="sec-default sec_services">
+        <section class="sec-default sec_services" id="services">
             <div class="container">
                 <header class="header-default">
                     <h2 class="title-default">Outros serviços</h2>
@@ -207,14 +241,14 @@
             <img class="float_services" src="assets/img/frame-dots.png" alt="">
         </section>
 
-        <section class="sec-default sec_clientes">
+        <section class="sec-default sec_clientes" id="customers">
             <div class="container">
                 <header class="header-default">
                     <h2 class="title-default">Nossos Clientes</h2>
                     <img src="assets/img/titulo-icon.png" alt="">
                 </header>
 
-                <section class="list_clientes d-flex">
+                <section class="list_clientes d-flex owl-carousel">
                     <article class="card_cliente">
                         <div class="content_card_cliente">
                             <img src="assets/img/cliente.png" alt="">
@@ -311,7 +345,7 @@
             </div>
         </section>
 
-        <section class="sec-default sec_blog">
+        <section class="sec-default sec_blog" id="blog">
             <img class="float_img_blog" src="assets/img/circle.png" alt="">
             <div class="container">
                 <header class="header-default">
@@ -414,7 +448,7 @@
             <div class="f-50">
                 <div class="row_footer">
                     <h3>Redes</h3>
-                    <div>
+                    <div class="links_footer">
                         <a href=""><i class="bi bi-facebook"></i></a>
                         <a href=""><i class="bi bi-instagram"></i></a>
                     </div>
@@ -423,7 +457,7 @@
                 <div class="row_footer">
                     <h3>Contato</h3>
 
-                    <div>
+                    <div class="links_footer">
                         <a href=""><i class="bi bi-whatsapp"></i></a>
                         <a href=""><i class="bi bi-envelope"></i></a>
                         <a href=""><i class="bi bi-telephone"></i></a>
@@ -434,7 +468,7 @@
         </div>
 
         <div class="bottom_footer">
-            <div class="container">
+            <div class="container d-flex">
                 <p>© Todos os direitos reservados</p>
                 <a href="">Políticas e termos de uso</a>
             </div>
@@ -442,7 +476,8 @@
         </div>
     </footer>
     
-
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
