@@ -28,6 +28,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+.f-70{
+    flex-basis: 70%;
+}
+.f-30{
+    flex-basis: 30%;
+}
 .f-50{
     flex-basis: 50%;
 }
@@ -714,7 +720,7 @@ footer.footer{
 }
 
 @media(max-width: 890px){
-    .f-50{
+    .f-50, .f-70, .f-30{
         flex-basis: 100%;
     }
     .left_hero{

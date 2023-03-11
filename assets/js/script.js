@@ -4,19 +4,17 @@ const header = document.querySelector('header.header');
 let height_header = header.getBoundingClientRect().height;
 
 
+if(hero){
+    document.addEventListener('DOMContentLoaded', () => {
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    console.log('height header: '+height_header);
-    hero.style.marginTop = "-"+height_header+"px";
-    hero.style.paddingTop = height_header+"px";
-})
-
+        console.log('height header: '+height_header);
+        hero.style.marginTop = "-"+height_header+"px";
+        hero.style.paddingTop = height_header+"px";
+    })
+}
 
 
 document.addEventListener('scroll', (e) => {
-
-    console.log(window.scrollY);
 
     if(window.scrollY > 150){
         header.classList.add('header_white');
@@ -85,19 +83,22 @@ btn_open_feat.forEach((item, index) => {
 
 });
 
-close_modal_feat.addEventListener('click', () => {
+if(close_modal_feat){
+    close_modal_feat.addEventListener('click', () => {
 
-    modal_feat.classList.remove('open_modal_feat');
-    modal_thumb.classList.remove('open_modal_thumb');
+        modal_feat.classList.remove('open_modal_feat');
+        modal_thumb.classList.remove('open_modal_thumb');
+    
+    });
+}
+if(close_modal_feat2){
+    close_modal_feat2.addEventListener('click', () => {
 
-});
-close_modal_feat2.addEventListener('click', () => {
-
-    modal_feat.classList.remove('open_modal_feat');
-    modal_thumb.classList.remove('open_modal_thumb');
-
-});
-
+        modal_feat.classList.remove('open_modal_feat');
+        modal_thumb.classList.remove('open_modal_thumb');
+    
+    });
+}
 
 
 
