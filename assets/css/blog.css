@@ -12,7 +12,9 @@
 .body_blog{
     padding: 80px 10px;
 }
-
+.content_post{
+    padding: 10px;
+}
 .card_post_blog{
     flex-basis: calc(33.33% - 20px);
     margin: 10px;
@@ -98,12 +100,14 @@
     padding: 10px 0;
 }
 .post_sidebar .thumb_post_sidebar{
-    width: 30%; 
+    width: 30%;
+    height: 90px;
     display: flex;
 }
 .post_sidebar .thumb_post_sidebar img{
     width: auto;
     height: 100%;
+    object-fit: cover;
 }
 .info_post_sidebar{
     width: 70%;
@@ -151,7 +155,7 @@
 }
 .title_header_post h1{
     font-size: 2em;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 .left_bottom_header_post a{
@@ -237,6 +241,17 @@
 }
 /* content page */
 
+.header_related_posts{
+    padding-top: 20px;
+    width: 100%;
+}
+.header_related_posts h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+
 
 @media(max-width: 890px){
     .card_post_blog{
@@ -249,6 +264,20 @@
         height: 180px;
         background-position: right;
     }
+    .content_post{
+        padding: 10px 0;
+    }
+    .post_sidebar .thumb_post_sidebar{
+        width: 30%;
+        height: 160px;
+        display: flex;
+    }
+    .post_sidebar .thumb_post_sidebar img{
+        width: 100%;
+    }
+    .thumbnail_post img{
+        height: 400px;
+    }
 }
 
 @media(max-width: 600px){
@@ -257,6 +286,36 @@
     }
     .card_post_blog .thumb_link{
         height: 220px;
+    }
+    .post_sidebar .thumb_post_sidebar{
+        width: 30%;
+        height: 100px;
+        display: flex;
+    }
+    .sidebar{
+        padding: 20px 0;
+    }
+    .title_header_post h1{
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    .right_bottom_header_post{
+        justify-content: flex-start;
+        padding: 10px 0;
+    }
+    .right_bottom_header_post a{
+        font-size: .875em;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    .thumbnail_post img{
+        height: 280px;
+    }
+    .card_post_blog{
+        margin: 10px 0;
+    }
+    .header_related_posts h2{
+        font-size: 1.5em;
     }
 }
 
@@ -267,4 +326,13 @@
     .header_blog{
         height: 100px;
     }
+    .post_sidebar .thumb_post_sidebar{
+        width: 30%;
+        height: 80px;
+        display: flex;
+    }
+    .thumbnail_post img{
+        height: 160px;
+    }
+    
 }
