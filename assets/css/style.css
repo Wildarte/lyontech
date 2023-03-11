@@ -102,6 +102,9 @@
 .color-white{
     color: var(--color-white);
 }
+.opa-0{
+    opacity: 0;
+}
 /* general syle */
 
 html,body{

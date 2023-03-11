@@ -101,6 +101,27 @@ if(close_modal_feat2){
 }
 
 
+function isOnScreen(el){
+    let rect = el.getBoundingClientRect();
+    return rect.top > 0 && rect.bottom < window.innerHeight;
+}
+
+const itens_onscreen = document.querySelectorAll('.isonscreen');
+
+document.addEventListener('scroll', () => {
+
+    itens_onscreen.forEach((item) => {
+
+        if(isOnScreen(item)){
+            item.classList.remove('opa-0')
+            item.classList.add( 'animate__fadeInDown');
+            item.style.setProperty('--animate-delay', '1s')
+            item.style.setProperty('--animate-duration', '1.5s');
+        }
+
+    });
+
+});
 
 //============================ owl carrousel ========================================
 $(document).ready(function(){
