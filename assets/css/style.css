@@ -450,6 +450,7 @@ img.float_services{
 }
 .author_dep p{
     padding: 0;
+    width: 100%;
 }
 
 .list_post_home{
@@ -647,7 +648,7 @@ footer.footer{
     box-shadow: 2px 2px 10px rgba(17, 5, 54, .6);
     color: var(--color-white);
     border-left: 8px solid var(--color-dark-light-blue);
-    transition: all .23s;
+    transition: all .7s;
 }
 .open_modal_feat{
     right: 0;
@@ -701,7 +702,7 @@ footer.footer{
     box-shadow: 2px 2px 10px rgba(17, 5, 54, .6);
     color: var(--color-white);
     border-right: 8px solid var(--color-dark-light-blue);
-    transition: all .23s;
+    transition: all .6s;
 }
 .open_modal_thumb{
     left: 0;
